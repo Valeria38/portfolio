@@ -8,11 +8,29 @@ class ReactPage extends React.Component {
         <div className="react-page__project-container">
           <a href="https://valeria38.github.io/react-tic-tac-toe/" target="_blank">
             <div className="react-page__project">
-              {/* <img src="https://github.com/Valeria38/portfolio/tree/develop/src/img/tictactoe.jpg" /> */}
+              <div className="layer">
+                <a href="https://valeria38.github.io/react-tic-tac-toe/" target="_blank">Preview</a>
+                <a href="https://github.com/Valeria38/react-tic-tac-toe/tree/develop" target="_blank">Github</a>
+              </div>
             </div>
           </a>
-          <div className="react-page__project">To do application</div>
-          <div className="react-page__project">Weather forecast</div>
+          <a>
+            <div className="react-page__project">
+              <div className="layer">
+                <a href="https://valeria38.github.io/react-todo-list/" target="_blank">Preview</a>
+                <a href="https://github.com/Valeria38/react-todo-list/tree/develop" target="_blank">Github</a>
+              </div>
+            </div>
+            
+          </a>
+          <a>
+            <div className="react-page__project">
+              <div className="layer">
+                <a href="https://valeria38.github.io/react-weather-app/" target="_blank">Preview</a>
+                <a href="https://github.com/Valeria38/react-weather-app/tree/develop" target="_blank">Github</a>
+              </div>
+            </div>
+          </a>
         </div>  
       </div>
     )

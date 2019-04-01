@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Route, Link } from 'react-router-dom';
+import { Route, Link, NavLink } from 'react-router-dom';
 import HomePage from './components/HomePage';
 import ReactPage from './components/ReactPage';
 import JSPage from './components/JSPage';
@@ -11,14 +11,14 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-          <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/react">React</Link></li>
-            <li><Link to="/js">JavaScript</Link></li>
-            <li><Link to="/layout">Layout</Link></li>
-            <li><Link to="/contacts">Contacts</Link></li>
+          <ul className="navigation-menu">
+            <li><NavLink className="navigation-menu__link" to="/">Home</NavLink></li>
+            <li><NavLink className="navigation-menu__link" to="/react">React</NavLink></li>
+            <li><NavLink className="navigation-menu__link" to="/js">JavaScript</NavLink></li>
+            <li><NavLink className="navigation-menu__link" to="/layout">Layout</NavLink></li>
+            <li><NavLink className="navigation-menu__link" to="/contacts">Contacts</NavLink></li>
           </ul>
-          <hr />
+          {/* <hr /> */}
           <Route exact path="/" component={HomePage} />
           <Route exact path="/react" component={ReactPage} />
           <Route exact path="/js" component={JSPage} />
