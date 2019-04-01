@@ -8,7 +8,7 @@ class ReactPage extends React.Component {
         <div className="react-page__project-container">
           <a href="https://valeria38.github.io/react-tic-tac-toe/" target="_blank">
             <div className="react-page__project">
-              <img src="https://github.com/Valeria38/portfolio/tree/develop/img/tictactoe.jpg" />
+              {/* <img src="https://github.com/Valeria38/portfolio/tree/develop/src/img/tictactoe.jpg" /> */}
             </div>
           </a>
           <div className="react-page__project">To do application</div>

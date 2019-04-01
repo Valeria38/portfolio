@@ -16,6 +16,11 @@
   height: 300px;
   border: 1px solid royalblue;
   margin:20px;
+  
+}
+.react-page__project:first-child {
+  background: url('https://raw.githubusercontent.com/Valeria38/portfolio/develop/src/img/tictactoe.jpg') no-repeat;
+  background-size: cover;
 }
 
 
