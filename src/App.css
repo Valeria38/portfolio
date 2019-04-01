@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: 'Abel', sans-serif;
 }
 body {
   background: #333;
@@ -19,15 +20,14 @@ body {
   text-transform: uppercase;
   background-color: rgb(68, 68, 68);
   border-radius: 5px;
-  box-shadow: 10px 10px 35px rgb(0, 0, 0);
 }
 .navigation-menu__link {
-  color: #fff;
+  color: rgb(255, 255, 255);
   text-decoration: none;
+  transition: color 2s;
 }
 .navigation-menu__link:hover {
-  color: tomato;
-  transition: 1s all;
+  color: rgb(42, 127, 255);
 }
 
 .react-page__project-container {
@@ -86,28 +86,55 @@ body {
 }
 
 .homepage {
-  border:1px solid silver;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   height: 510px;
   padding:40px;
-  background: url('http://dincahul.md/wp-content/uploads/2018/09/game-designer-desk-1068x534.jpg') no-repeat;
+  background: url('https://cdn-images-1.medium.com/max/1600/1*dlN-vF1YJ7ZpOrx8rOGBEQ.jpeg') no-repeat;
   background-size: cover;
+  margin-top:20px;
 }
 .homepage__photo {
   width:200px;
   height:200px;
-  background: tomato;
   border-radius: 50%;
-  
+  background: url('https://raw.githubusercontent.com/Valeria38/portfolio/develop/src/img/homepage/me.jpg') no-repeat;
+  background-size: cover;
+  transition: background 2s;
 }
-.homepage__info {
-  
+.homepage__photo:hover {
+  background: rgba(0,0,0,.5);
+}
+
+.homepage__info p {
+  font-size:36px;
+  color: rgb(255, 255, 255);
+  margin-bottom:40px;
+}
+
+
+/* display: table;
+	margin: 10px auto;
+	font-weight: 500;
+	font-size: 38px;
+	background: linear-gradient(330deg, #fff 0%, rgb(38, 125, 255) 50%,rgb(0, 34, 109) 100%);
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+*/  
+
+@media screen and (max-width: 1450px) {
+  .homepage {
+    height:800px;
+  }
 }
 
 @media screen and (max-width: 1050px) {
   .react-page__project-container {
     height: 700px;
+  }
+  .homepage {
+    height:1000px;
   }
 }
 
@@ -118,5 +145,8 @@ body {
   .react-page__project {
     width: 400px;
     height:400px;
+  }
+  .homepage {
+    height: 1000px;
   }
 }

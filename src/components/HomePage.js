@@ -6,7 +6,7 @@ class HomePage extends React.Component {
       <div className="homepage">
         <div className="homepage__photo"></div>
         <div className="homepage__info">
-        <h3>Hi! My name is Valeria Gora.</h3>
+          <p>Hi! My name is Valeria Gora.</p>
           <p>I have good knowledge in HTML/CSS and well familiar with JavaScript.</p>
           <p>I am able to work on and support several projects simultaneously.</p>
           <p>Continuously striving to improve all practices, routines and systems.</p>
