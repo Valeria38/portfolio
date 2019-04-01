@@ -48,15 +48,15 @@ body {
 }
 
 .react-page a:first-child .react-page__project {
-  background: url('https://raw.githubusercontent.com/Valeria38/portfolio/develop/src/img/tictactoe.jpg') no-repeat;
+  background: url('https://raw.githubusercontent.com/Valeria38/portfolio/develop/src/img/reactpage/tictactoe.jpg') no-repeat;
   background-size: cover;
 }
 .react-page a:nth-child(2) .react-page__project{
-  background: url('https://raw.githubusercontent.com/Valeria38/portfolio/develop/src/img/todo.jpg') no-repeat;
+  background: url('https://raw.githubusercontent.com/Valeria38/portfolio/develop/src/img/reactpage/todo.jpg') no-repeat;
   background-size: cover;
 }
 .react-page a:last-child .react-page__project{
-  background: url(' https://raw.githubusercontent.com/Valeria38/portfolio/develop/src/img/forecast.jpg') no-repeat;
+  background: url(' https://raw.githubusercontent.com/Valeria38/portfolio/develop/src/img/reactpage/forecast.jpg') no-repeat;
   background-size: cover;
 }
 
