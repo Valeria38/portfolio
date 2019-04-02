@@ -9,17 +9,25 @@ body {
 .navigation-menu {
   display: flex;
   justify-content: center;
+  padding:0;
+  margin:0;
 }
 .navigation-menu li {
   list-style-type: none;
   width:120px;
   height:40px;
   line-height:40px;
+  margin: 0 20px;
   text-align: center;
-  margin-right:40px;
   text-transform: uppercase;
   background-color: rgb(68, 68, 68);
   border-radius: 5px;
+}
+.navigation-menu li:first-child {
+  margin-left: 0;
+}
+.navigation-menu li:last-child {
+  margin-right: 0;
 }
 .navigation-menu__link {
   color: rgb(255, 255, 255);
@@ -35,16 +43,18 @@ body {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  height: 400px;
+  height: 500px;
   align-content: center;
   flex-wrap: wrap;
   background: #333;
+  /* border: 1px solid red; */
 }
 .react-page__project {
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   margin:20px;
   position:relative;
+  font-size: 28px;
 }
 
 .react-page a:first-child .react-page__project {
@@ -101,10 +111,12 @@ body {
   border-radius: 50%;
   background: url('https://raw.githubusercontent.com/Valeria38/portfolio/develop/src/img/homepage/me.jpg') no-repeat;
   background-size: cover;
-  transition: background 2s;
+  /* transition: background 3s; */
 }
 .homepage__photo:hover {
-  background: rgba(0,0,0,.5);
+  /* background: rgba(0, 0, 0, .5); */
+  /* background-size: cover; */
+  /* background-position: 50% 50%; */
 }
 
 .homepage__info p {
@@ -127,26 +139,41 @@ body {
   .homepage {
     height:800px;
   }
+  .react-page__project {
+    width:300px;
+    height: 300px;
+    font-size: 26px;
+  }
+  .react-page__project-container {
+    height: 400px;
+  }
 }
 
 @media screen and (max-width: 1050px) {
   .react-page__project-container {
     height: 700px;
   }
+  
   .homepage {
     height:1000px;
   }
 }
 
 @media screen and (max-width: 700px) {
+  .navigation-menu li {
+    /* font-size: 16px; */
+    margin:0px;
+    border-radius: 0;
+  }
   .react-page__project-container {
     height: 1300px;
   }
   .react-page__project {
     width: 400px;
     height:400px;
+    font-size: 28px;
   }
   .homepage {
-    height: 1000px;
+    height: 1300px;
   }
 }
