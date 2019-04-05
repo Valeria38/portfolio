@@ -15,7 +15,7 @@ class App extends Component {
             <li><NavLink className="navigation-menu__link" to="/">Home</NavLink></li>
             <li><NavLink className="navigation-menu__link" to="/react">React</NavLink></li>
             <li><NavLink className="navigation-menu__link" to="/js">JavaScript</NavLink></li>
-            <li><NavLink className="navigation-menu__link" to="/layout">Layout</NavLink></li>
+            <li><NavLink className="navigation-menu__link" to="/layout">Layouts</NavLink></li>
             <li><NavLink className="navigation-menu__link" to="/contacts">Contacts</NavLink></li>
           </ul>
           {/* <hr /> */}

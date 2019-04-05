@@ -4,7 +4,7 @@ class JSPage extends React.Component {
   render() {
     return (
       <div className="js-page">
-        <h2>My JavaScript Projects:</h2>
+        <h2>JavaScript Projects</h2>
         <div className="js-page__project-container">
         <a href="https://valeria38.github.io/Tic-tac-toe/" target="_blank">
             <div className="js-page__project">
@@ -25,31 +25,31 @@ class JSPage extends React.Component {
           <a href="https://codepen.io/Valeria38/pen/NezmKB?editors=0010" target="_blank">
             <div className="js-page__project">
               <div className="layer">
-                <a href="https://codepen.io/Valeria38/pen/NezmKB?editors=0010">Preview</a>
+                <a href="https://codepen.io/Valeria38/pen/NezmKB?editors=0010" target="_blank">Preview</a>
               </div>
             </div>
           </a>
-          {/* <a href="https://codepen.io/Valeria38/pen/wRYZrq" target="_blank">
+          <a href="https://codepen.io/Valeria38/pen/wRYZrq" target="_blank">
             <div className="js-page__project">
               <div className="layer">
-                <a href="https://codepen.io/Valeria38/pen/wRYZrq">Preview</a>
+                <a href="https://codepen.io/Valeria38/pen/wRYZrq" target="_blank">Preview</a>
               </div>
             </div>
-          </a> */}
-          {/* <a href="https://codepen.io/Valeria38/pen/qgbXKo?editors=0010" target="_blank">
+          </a>
+          <a href="https://codepen.io/Valeria38/pen/qgbXKo?editors=0010" target="_blank">
             <div className="js-page__project">
               <div className="layer">
-                <a href="https://codepen.io/Valeria38/pen/qgbXKo?editors=0010">Preview</a>
+                <a href="https://codepen.io/Valeria38/pen/qgbXKo?editors=0010" target="_blank">Preview</a>
               </div>
             </div>
-          </a> */}
-          {/* <a href="https://codepen.io/Valeria38/pen/RvKqEm?editors=0011" target="_blank">
+          </a>
+          <a href="https://codepen.io/Valeria38/pen/RvKqEm?editors=0011" target="_blank">
             <div className="js-page__project">
               <div className="layer">
-                <a href="https://codepen.io/Valeria38/pen/RvKqEm?editors=0011">Preview</a>
+                <a href="https://codepen.io/Valeria38/pen/RvKqEm?editors=0011" target="_blank">Preview</a>
               </div>
             </div>
-          </a> */}
+          </a>
         </div>  
       </div>
     )

@@ -4,7 +4,7 @@ class ReactPage extends React.Component {
   render() {
     return (
       <div className="react-page">
-        <h2>My React Projects:</h2>
+        <h2>React Projects</h2>
         <div className="react-page__project-container">
           <a href="https://valeria38.github.io/react-tic-tac-toe/" target="_blank">
             <div className="react-page__project">
