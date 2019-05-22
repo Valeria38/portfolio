@@ -1,4 +1,5 @@
 import React from 'react';
+import Project from './Project';
 
 class JSPage extends React.Component {
   render() {
@@ -6,50 +7,37 @@ class JSPage extends React.Component {
       <div className="js-page">
         <h2>JavaScript Projects</h2>
         <div className="js-page__project-container">
-        <a href="https://valeria38.github.io/Tic-tac-toe/" target="_blank">
-            <div className="js-page__project">
-              <div className="layer">
-                <a href="https://valeria38.github.io/Tic-tac-toe/" target="_blank">Preview</a>
-                <a href="https://github.com/Valeria38/Tic-tac-toe/tree/gh-pages">Github</a>
-              </div>
-            </div>
-          </a>
-          <a href="https://valeria38.github.io/15-puzzle/" target="_blank">
-            <div className="js-page__project">
-              <div className="layer">
-                <a href="https://valeria38.github.io/15-puzzle/" target="_blank">Preview</a>
-                <a href="https://github.com/Valeria38/15-puzzle/tree/gh-pages" target="_blank">Github</a>
-              </div>
-            </div>
-          </a>
-          <a href="https://codepen.io/Valeria38/pen/NezmKB?editors=0010" target="_blank">
-            <div className="js-page__project">
-              <div className="layer">
-                <a href="https://codepen.io/Valeria38/pen/NezmKB?editors=0010" target="_blank">Preview</a>
-              </div>
-            </div>
-          </a>
-          <a href="https://codepen.io/Valeria38/pen/wRYZrq" target="_blank">
-            <div className="js-page__project">
-              <div className="layer">
-                <a href="https://codepen.io/Valeria38/pen/wRYZrq" target="_blank">Preview</a>
-              </div>
-            </div>
-          </a>
-          <a href="https://codepen.io/Valeria38/pen/qgbXKo?editors=0010" target="_blank">
-            <div className="js-page__project">
-              <div className="layer">
-                <a href="https://codepen.io/Valeria38/pen/qgbXKo?editors=0010" target="_blank">Preview</a>
-              </div>
-            </div>
-          </a>
-          <a href="https://codepen.io/Valeria38/pen/RvKqEm?editors=0011" target="_blank">
-            <div className="js-page__project">
-              <div className="layer">
-                <a href="https://codepen.io/Valeria38/pen/RvKqEm?editors=0011" target="_blank">Preview</a>
-              </div>
-            </div>
-          </a>
+        <Project 
+          projectType="js"
+          link="https://valeria38.github.io/Tic-tac-toe/"
+          ghLink="https://github.com/Valeria38/Tic-tac-toe/tree/gh-pages"
+        />
+        
+        <Project 
+          projectType="js"
+          link="https://valeria38.github.io/15-puzzle/"
+          ghLink="https://github.com/Valeria38/15-puzzle/tree/gh-pages"
+        />
+
+        <Project 
+          projectType="js"
+          link="https://codepen.io/Valeria38/pen/NezmKB?editors=0010"
+        />
+
+        <Project 
+          projectType="js"
+          link="https://codepen.io/Valeria38/pen/wRYZrq"
+        />
+
+        <Project 
+          projectType="js"
+          link="https://codepen.io/Valeria38/pen/qgbXKo?editors=0010"
+        />
+
+        <Project 
+          projectType="js"
+          link="https://codepen.io/Valeria38/pen/RvKqEm?editors=0011"
+        />
         </div>  
       </div>
     )

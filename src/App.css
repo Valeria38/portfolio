@@ -3,7 +3,8 @@
   font-family: 'Abel', sans-serif;
 }
 html {
-  scroll-behavior: smooth; 
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 body {
   background: #333;
@@ -12,14 +13,14 @@ body {
 .navigation-menu {
   display: flex;
   justify-content: center;
-  padding:20px;
-  margin:0;
+  padding: 20px;
+  margin: 0;
 }
 .navigation-menu li {
   list-style-type: none;
-  width:120px;
-  height:40px;
-  line-height:40px;
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
   margin: 0 20px;
   text-align: center;
   text-transform: uppercase;
@@ -54,36 +55,46 @@ body {
   background-size: cover;
   background: url('https://awaywestray.com/wp-content/uploads/2018/05/stanley-dai-242205-unsplash.jpg');
   background-size: 0% 20%;
-  /* background-blend-mode: soft-light; */
 }
-.react-page, .js-page, .layout-page, .contacts-page {
+.react-page,
+.js-page,
+.layout-page,
+.contacts-page {
   background: url('https://awaywestray.com/wp-content/uploads/2018/05/stanley-dai-242205-unsplash.jpg');
   padding-top: 20px;
 }
-.react-page h2, .js-page h2, .layout-page h2, .contacts-page h2 {
+.react-page h2,
+.js-page h2,
+.layout-page h2,
+.contacts-page h2 {
   font-size: 36px;
-  color:#fff;
-  margin:0;
-  font-weight:normal;
+  color: #fff;
+  margin: 0;
+  font-weight: normal;
 }
-.react-page__project, .js-page__project, .layout-page__project {
+.react-page__project,
+.js-page__project,
+.layout-page__project {
   width: 400px;
   height: 400px;
-  margin:20px;
-  position:relative;
+  margin: 20px;
+  position: relative;
   font-size: 28px;
 }
 /* react page */
 .react-page a:first-child .react-page__project {
-  background: url('https://raw.githubusercontent.com/Valeria38/portfolio/develop/src/img/reactpage/tictactoe.jpg') no-repeat;
+  background: url('https://raw.githubusercontent.com/Valeria38/portfolio/develop/src/img/reactpage/tictactoe.jpg')
+    no-repeat;
   background-size: cover;
 }
-.react-page a:nth-child(2) .react-page__project{
-  background: url('https://raw.githubusercontent.com/Valeria38/portfolio/develop/src/img/reactpage/todo.jpg') no-repeat;
+.react-page a:nth-child(2) .react-page__project {
+  background: url('https://raw.githubusercontent.com/Valeria38/portfolio/develop/src/img/reactpage/todo.jpg')
+    no-repeat;
   background-size: cover;
 }
-.react-page a:last-child .react-page__project{
-  background: url(' https://raw.githubusercontent.com/Valeria38/portfolio/develop/src/img/reactpage/forecast.jpg') no-repeat;
+.react-page a:last-child .react-page__project {
+  background: url(' https://raw.githubusercontent.com/Valeria38/portfolio/develop/src/img/reactpage/forecast.jpg')
+    no-repeat;
   background-size: cover;
 }
 /* js page */
@@ -91,33 +102,43 @@ body {
   height: 900px;
 }
 .js-page a:first-child .js-page__project {
-  background: url('https://raw.githubusercontent.com/Valeria38/portfolio/develop/src/img/jspage/tictactoe.jpg') no-repeat;
+  background: url('https://raw.githubusercontent.com/Valeria38/portfolio/develop/src/img/jspage/tictactoe.jpg')
+    no-repeat;
   background-size: cover;
 }
-.js-page a:nth-child(2) .js-page__project{
-  background: url('https://raw.githubusercontent.com/Valeria38/portfolio/develop/src/img/jspage/15puzzle.jpg') no-repeat;
+.js-page a:nth-child(2) .js-page__project {
+  background: url('https://raw.githubusercontent.com/Valeria38/portfolio/develop/src/img/jspage/15puzzle.jpg')
+    no-repeat;
   background-size: cover;
 }
 .js-page a:nth-child(3) .js-page__project {
-  background: url('https://raw.githubusercontent.com/Valeria38/portfolio/develop/src/img/jspage/calendar.jpg') no-repeat;
+  background: url('https://raw.githubusercontent.com/Valeria38/portfolio/develop/src/img/jspage/calendar.jpg')
+    no-repeat;
   background-size: cover;
 }
 .js-page a:nth-child(4) .js-page__project {
-  background: url('https://raw.githubusercontent.com/Valeria38/portfolio/develop/src/img/jspage/gallery.jpg') no-repeat;
+  background: url('https://raw.githubusercontent.com/Valeria38/portfolio/develop/src/img/jspage/gallery.jpg')
+    no-repeat;
   background-size: cover;
 }
 .js-page a:nth-child(5) .js-page__project {
-  background: url('https://raw.githubusercontent.com/Valeria38/portfolio/develop/src/img/jspage/clock.jpg') no-repeat;
+  background: url('https://raw.githubusercontent.com/Valeria38/portfolio/develop/src/img/jspage/clock.jpg')
+    no-repeat;
   background-size: cover;
 }
 .js-page a:nth-child(6) .js-page__project {
-  background: url('https://raw.githubusercontent.com/Valeria38/portfolio/develop/src/img/jspage/tabs.jpg') no-repeat;
+  background: url('https://raw.githubusercontent.com/Valeria38/portfolio/develop/src/img/jspage/tabs.jpg')
+    no-repeat;
   background-size: cover;
 }
-.js-page__project, .react-page__project, .layout-page__project {
+.js-page__project,
+.react-page__project,
+.layout-page__project {
   transition: transform 2s;
 }
-.js-page__project:hover, .react-page__project:hover, .layout-page__project:hover {
+.js-page__project:hover,
+.react-page__project:hover,
+.layout-page__project:hover {
   transform: scale(1.1);
 }
 
@@ -126,23 +147,25 @@ body {
   background: url('') no-repeat;
   background-size: cover;
 }
-.layout-page a:nth-child(2) .layout-page__project{
+.layout-page a:nth-child(2) .layout-page__project {
   background: url('') no-repeat;
   background-size: cover;
 }
-.layout-page a:last-child .layout-page__project{
+.layout-page a:last-child .layout-page__project {
   background: url('') no-repeat;
   background-size: cover;
 }
 /* */
-.react-page .layer, .js-page .layer, .layout-page .layer {
+.react-page .layer,
+.js-page .layer,
+.layout-page .layer {
   display: none;
-  background:rgba(0, 0, 0, .5);
-  position:absolute;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
   top: 0;
   left: 0;
-  height:100%;
-  width:100%;
+  height: 100%;
+  width: 100%;
 }
 
 .react-page a .react-page__project:hover .layer,
@@ -156,8 +179,8 @@ body {
 .react-page__project a,
 .js-page__project a,
 .layout-page__project a {
-  color:white;
-  margin:10px;
+  color: white;
+  margin: 10px;
   text-decoration: none;
 }
 .react-page__project a:hover,
@@ -167,39 +190,47 @@ body {
 }
 
 .homepage {
+  height: 500px;
+  background: url('https://backgrounddownload.com/wp-content/uploads/2018/09/keyboard-background.jpg');
+  background-size: cover;
+  margin-top: 20px;
+}
+.shadow {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  height: 480px;
-  padding:20px;
-  background: url('https://cdn-images-1.medium.com/max/1600/1*dlN-vF1YJ7ZpOrx8rOGBEQ.jpeg') no-repeat;
-  background-size: cover;
-  margin-top:20px;
-  /* border: 1px solid royalblue; */
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.7;
+  padding: 15px;
+  /* padding-bottom: 30px; */
+  box-sizing: border-box;
 }
 .homepage__photo {
-  width:200px;
-  height:200px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
-  background: url('https://raw.githubusercontent.com/Valeria38/portfolio/develop/src/img/homepage/me.jpg') no-repeat;
+  background: url('https://raw.githubusercontent.com/Valeria38/portfolio/develop/src/img/homepage/me.jpg')
+    no-repeat;
   background-size: cover;
 }
-
 .homepage__info p {
-  font-size:32px;
-  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 32px;
+  color: rgb(121, 148, 223);
 }
 .homepage__skills {
   display: flex;
 }
 .homepage__link,
 .homepage__tech-skills {
-  padding:40px;
-  font-size:32px;
+  padding: 40px;
+  font-size: 32px;
   background: rgb(253, 244, 212);
-  color:rgb(148, 132, 111);
-  height:400px;
-  width:50%;
+  color: rgb(148, 132, 111);
+  height: 400px;
+  width: 50%;
 }
 .homepage__link .link {
   text-decoration: none;
@@ -207,6 +238,7 @@ body {
 }
 .homepage__tech-skills {
   background: rgb(211, 205, 191);
+  height: 460px;
 }
 .homepage__tech-skills li:first-child {
   font-weight: bold;
@@ -214,11 +246,11 @@ body {
 .homepage__menu {
   list-style-type: none;
   padding: 20px;
-  margin:0;
+  margin: 0;
 }
 .homepage__scroll {
-  width:100%;
-  height:80px;
+  width: 100%;
+  height: 80px;
 }
 .homepage__arrow-down {
   margin-top: 20px;
@@ -239,23 +271,24 @@ body {
   width: 40px;
   box-sizing: border-box;
 }
-.homepage__link{
-  background:url('http://jmbliss.com/wp-content/uploads/2017/08/slide444.jpg');
+.homepage__link {
+  background: url('http://jmbliss.com/wp-content/uploads/2017/08/slide444.jpg');
   background-size: 100% 100%;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
-  font-weight:bold;
-  font-size:38px;
+  font-weight: bold;
+  font-size: 38px;
   text-decoration: none;
   color: rgb(105, 139, 168);
+  height: 460px;
 }
 .homepage__link:hover {
   color: rgb(76, 127, 173);
   cursor: pointer;
 }
 .contacts-page {
-  height:640px;
+  height: 80vh;
 }
 
 .contacts-page__container {
@@ -263,65 +296,58 @@ body {
   justify-content: center;
 }
 .contacts-page__info {
-  width:200px;
-  text-align: left;
+  width: 40%;
+  text-align: center;
   padding: 20px;
-  font-size:20px;
+  font-size: 24px;
   color: #c0c0c0;
-  background:#444;
+  background: rgba(68, 68, 68, 0.9);
+  padding-bottom: 40px;
 }
 .contacts-page__info i {
   color: #c0c0c0;
   margin: 0 15px 0 0;
 }
 .contacts-page__info i:hover {
-  color:white;
+  color: white;
   cursor: pointer;
 }
 .contacts-page__container {
-  margin-top:20px;
-}
-.contacts-page__form form {
-  display: flex;
-  flex-direction: column;
-  background: #444;
-  padding:20px;
-}
-
-.contacts-page__form form input {
-  width: 440px;
-  height:30px;
-  margin-bottom:20px;
-  padding-left:5px;
-}
-.contacts-page__form form button {
-  width:26%;
-  height:34px;
-  border-radius: 5px;
-  border:none;
   margin-top: 20px;
-  align-self: center;
-  line-height:34px;
-  background: rgb(42, 127, 255);
-  color: rgb(196, 223, 255);
-  transition: background 500ms;
 }
 .contacts-page__form form button:hover {
-  cursor:pointer;
-  background:rgb(6, 104, 252);
+  cursor: pointer;
+  background: rgb(6, 104, 252);
 }
- 
+
+.footer {
+  height: 60px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  background: rgb(31, 30, 30);
+  opacity: 0.5;
+}
+
+.footer i {
+  color: rgb(255, 255, 255, 0.4);
+  margin: 0 15px 0 0;
+}
+.footer i:hover {
+  color: #fff;
+  cursor: pointer;
+}
 @media screen and (max-width: 1450px) {
-  /* .react-page__project, */
   .js-page__project {
-    width:300px;
+    width: 300px;
     height: 300px;
     font-size: 26px;
   }
   .react-page__project,
   .layout-page__project {
-    width:350px;
-    height:350px;
+    width: 350px;
+    height: 350px;
     font-size: 28px;
   }
   .react-page__project-container,
@@ -331,13 +357,14 @@ body {
   .js-page__project-container {
     height: 700px;
   }
-  .contacts-page__form form input {
-    width: 420px;
+  .homepage__tech-skills,
+  .homepage__link {
+    height: 460px;
   }
 }
 @media screen and (max-width: 1230px) {
   .homepage {
-    height:700px;
+    height: 700px;
   }
 }
 @media screen and (max-width: 1187px) {
@@ -345,11 +372,15 @@ body {
   .layout-page__project-container {
     height: 800px;
   }
+  .homepage__tech-skills,
+  .homepage__link {
+    height: 460px;
+  }
 }
 
 @media screen and (max-width: 1050px) {
   .homepage {
-    height:780px;
+    height: 780px;
   }
   .homepage p {
     font-size: 30px;
@@ -363,10 +394,16 @@ body {
   }
   .react-page__project-container,
   .layout-page__project-container {
-    height:900px;
+    height: 900px;
   }
   .js-page__project-container {
     height: 740px;
+  }
+  .contacts-page__info {
+    width: 60%;
+  }
+  .homepage__tech-skills {
+    height: 450px;
   }
 }
 
@@ -374,8 +411,8 @@ body {
   .js-page__project-container {
     height: 1100px;
   }
-  .contacts-page__form form input {
-    width: 380px;
+  .homepage__tech-skills {
+    height: 460px;
   }
 }
 
@@ -384,11 +421,17 @@ body {
   .layout-page__project-container {
     height: 900px;
   }
+  .contacts-page__info {
+    width: 80%;
+  }
 }
 @media screen and (max-width: 800px) {
   .react-page__project-container,
   .layout-page__project-container {
     height: 1200px;
+  }
+  .homepage__tech-skills {
+    height: 450px;
   }
 }
 
@@ -403,48 +446,49 @@ body {
 
 @media screen and (max-width: 700px) {
   .navigation-menu li {
-    margin:0px;
+    margin: 0px;
     border-radius: 0;
   }
   .react-page__project-container,
   .layout-page__project-container {
-    height: 1350px;
+    height: 1300px;
   }
   .react-page__project,
   .js-page__project,
   .layout-page__project {
-    width: 400px;
-    height:400px;
+    width: 370px;
+    height: 370px;
     font-size: 28px;
   }
   .js-page__project-container {
-    height: 2700px;
+    height: 2500px;
   }
   .contacts-page {
-    height:700px;
-  }
-  .contacts-page__info {
-    width:390px;
-    margin-top:20px;
-    text-align:center;
+    height: 700px;
   }
   .contacts-page__container {
     flex-wrap: wrap;
+  }
+  .homepage__tech-skills {
+    height: 450px;
   }
 }
 
 @media screen and (max-width: 600px) {
   .homepage {
-    height: 840px;
+    height: 860px;
   }
   .homepage p {
-    font-size:28px;
+    font-size: 28px;
   }
   .homepage__link,
   .homepage__tech-skills {
-    height:360px;
-    font-size:28px;
-    padding:10px;
-    overflow:hidden;
+    height: 400px;
+    font-size: 28px;
+    padding: 10px;
+    overflow: hidden;
+  }
+  .shadow {
+    opacity: 0.6;
   }
 }
