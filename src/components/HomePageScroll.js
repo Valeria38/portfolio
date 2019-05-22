@@ -1,8 +1,10 @@
 import React from 'react';
 
 const HomePageScroll = () => (
-  <div class="homepage__scroll">
-    <a href="#skills" ><i class="homepage__arrow-down"></i></a>
+  <div className='homepage__scroll'>
+    <a href='#skills'>
+      <i className='homepage__arrow-down' />
+    </a>
   </div>
 );
 
